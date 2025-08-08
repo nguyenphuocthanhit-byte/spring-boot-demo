@@ -40,3 +40,4 @@ permissions:
   
 env:
   GITHUB_TOKEN: ${{ secrets.YOUR_PAT_SECRET_NAME }}
+  
