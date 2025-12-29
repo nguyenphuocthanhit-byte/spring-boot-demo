@@ -3,8 +3,7 @@ FROM eclipse-temurin:17-jre-jammy
 WORKDIR /app
 
 COPY target/springboot-images-new.jar springboot-images-new.jar
-COPY wait-for-redis.sh wait-for-redis.sh
 
-RUN chmod +x wait-for-redis.sh
+EXPOSE 8080
 
-CMD ["./wait-for-redis.sh", "java", "-jar", "springboot-images-new.jar"]
+CMD ["java", "-jar", "springboot-images-new.jar"]
