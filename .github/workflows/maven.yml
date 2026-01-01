@@ -49,7 +49,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: [ aws-ec2 ]
+    runs-on: [ aws2-ec2 ]
     steps:
       - name: Delete old container
         run: docker rm -f springboot-example-container
